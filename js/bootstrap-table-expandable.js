@@ -11,7 +11,7 @@
             });
             table.children('tbody').children('tr').filter(':even').each(function () {
                 var element = $(this);
-                element.append('<td><div class="table-expandable-arrow"></div></td>');
+                element.append('<td><div class="table-expandable-btn"><div class="table-expandable-arrow"></div></div></td>');
             });
         });
     });

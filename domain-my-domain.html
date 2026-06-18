@@ -372,6 +372,7 @@
 								  <th>EXP. Date</th>
 								  <th>Auto Renew</th>
 								  <th>Status</th>
+								  <th>Action</th>
 								</tr>
 							  </thead>
 							  <tbody>
@@ -388,11 +389,24 @@
 								  <td>29 Jan, 2019</td>
 								  <td class="PT-auto-renew"><i class="fas fa-check"></i>  Enabled</td>
 								  <td class="green-text">Active</td>
+								  <td>
+									<div class="table-action-cell">
+										<button class="renew-btn">Renew</button>
+										<div class="table-action-menu">
+											<div class="action-menu-btn">&#8230;</div>
+											<div class="table-action-menu-list">
+												<ul>
+													<li><a href="#">Renew</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								  </td>
 								</tr>
 
 								<tr>
 								  <td colspan="6" class="PLT-collapse">
-									  <div class="PLT-nested-tab">
+									  <div class="PLT-nested-tab px-0">
 										<!-- Nested Tabs --->
 										  <ul class="nav nav-tabs" id="repoTabs">
 											  <li class="active"><a href="#nes_DNS_tab" data-toggle="tab">DNS Manager</a></li>
@@ -401,6 +415,7 @@
 											  <li><a href="#nes_autoreniew_tab" data-toggle="tab">Auto Renew</a></li>
 											  <li><a href="#nes_dominprivacy_tab" data-toggle="tab">Domain Privacy</a></li>
 											  <li><a href="#nes_dominTrasnfer_tab" data-toggle="tab">Domin Transfer</a></li>
+											  <li><a href="#nes_dnssec_tab" data-toggle="tab">DNSSEC Settings</a></li>
 											  <li><a href="#nes_dominnote_tab" data-toggle="tab">Domain Note</a></li>
 										  </ul>
 
@@ -1117,6 +1132,364 @@
 
 													  </div>
 												  </div>
+											  </div>
+											  <div class="tab-pane" id="nes_dnssec_tab">
+												<div class="dnssec-form">
+													<p class="text-left">A domain holder interested in DNSSEC must publish a signed ZONE for their domain and provide information about the DS record(s) through this screen. The KEYDATA record is optional only, but cannot be submitted without a DS record.</p>
+													<form action="#">
+													
+														<!-- DS1 -->
+														<div class="dnssec-form-row">
+															<h6>DS1</h6>
+															<div class="input-fild">
+																<label>Keytag</label>
+																<input type="text">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest Type</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest</label>
+																<input type="text">
+															</div>
+														</div>
+													
+														<div class="dnssec-form-row">
+															<h6>Key Data <br><span>(OPTIONAL)</span></h6>
+															<div class="input-fild">
+																<label>Flags</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Protocol</label>
+																<input type="text" value="3">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>PublicKey</label>
+																<input type="text">
+															</div>
+														</div>
+													
+														<!-- DS2 -->
+														<div class="dnssec-form-row">
+															<h6>DS2</h6>
+															<div class="input-fild">
+																<label>Keytag</label>
+																<input type="text">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest Type</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest</label>
+																<input type="text">
+															</div>
+														</div>
+													
+														<div class="dnssec-form-row">
+															<h6>Key Data <br><span>(OPTIONAL)</span></h6>
+															<div class="input-fild">
+																<label>Flags</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Protocol</label>
+																<input type="text" value="3">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>PublicKey</label>
+																<input type="text">
+															</div>
+														</div>
+													
+														<!-- DS3 -->
+														<div class="dnssec-form-row">
+															<h6>DS3</h6>
+															<div class="input-fild">
+																<label>Keytag</label>
+																<input type="text">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest Type</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest</label>
+																<input type="text">
+															</div>
+														</div>
+													
+														<div class="dnssec-form-row">
+															<h6>Key Data <br><span>(OPTIONAL)</span></h6>
+															<div class="input-fild">
+																<label>Flags</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Protocol</label>
+																<input type="text" value="3">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>PublicKey</label>
+																<input type="text">
+															</div>
+														</div>
+													
+														<!-- DS4 -->
+														<div class="dnssec-form-row">
+															<h6>DS4</h6>
+															<div class="input-fild">
+																<label>Keytag</label>
+																<input type="text">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest Type</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest</label>
+																<input type="text">
+															</div>
+														</div>
+													
+														<div class="dnssec-form-row">
+															<h6>Key Data <br><span>(OPTIONAL)</span></h6>
+															<div class="input-fild">
+																<label>Flags</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Protocol</label>
+																<input type="text" value="3">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>PublicKey</label>
+																<input type="text">
+															</div>
+														</div>
+													
+														<!-- DS5 -->
+														<div class="dnssec-form-row">
+															<h6>DS5</h6>
+															<div class="input-fild">
+																<label>Keytag</label>
+																<input type="text">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest Type</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest</label>
+																<input type="text">
+															</div>
+														</div>
+													
+														<div class="dnssec-form-row">
+															<h6>Key Data <br><span>(OPTIONAL)</span></h6>
+															<div class="input-fild">
+																<label>Flags</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Protocol</label>
+																<input type="text" value="3">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>PublicKey</label>
+																<input type="text">
+															</div>
+														</div>
+													
+														<!-- DS6 -->
+														<div class="dnssec-form-row">
+															<h6>DS6</h6>
+															<div class="input-fild">
+																<label>Keytag</label>
+																<input type="text">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest Type</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Digest</label>
+																<input type="text">
+															</div>
+														</div>
+													
+														<div class="dnssec-form-row">
+															<h6>Key Data <br><span>(OPTIONAL)</span></h6>
+															<div class="input-fild">
+																<label>Flags</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>Protocol</label>
+																<input type="text" value="3">
+															</div>
+															<div class="input-fild">
+																<label>Algorithm</label>
+																<div class="input-droprown">
+																	<select>
+																		<option value=""></option>
+																	</select>
+																</div>
+															</div>
+															<div class="input-fild">
+																<label>PublicKey</label>
+																<input type="text">
+															</div>
+														</div>
+
+														<div class="dnssec-bottom-section">
+															<button class="delete-btn">Delete All Records</button>
+
+															<div class="right-side-btns">
+																<button class="btn-danger">Cancel</button>
+																<button class="btn-primary">Save changes</button>
+															</div>
+														</div>
+													</form>
+												</div>
 											  </div>
 											  <div class="tab-pane" id="nes_dominnote_tab">
 												  <div class="PTLN-tab-note">

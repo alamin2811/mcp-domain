@@ -5324,3 +5324,230 @@ div[contenteditable=true].VTMB-textarea:focus {
 }
 
 
+
+
+/* new style 18/06/2026 */
+.px-0{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.dash-domin-main .nav.nav-tabs li a{
+    position: relative;
+}
+.dash-domin-main .nav.nav-tabs li a{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.dash-domin-main table .table-expandable-btn{
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    background-color: #0099ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+.dash-domin-main table .table-expandable-btn .table-expandable-arrow{
+    filter: brightness(100);
+}
+.dash-domin-main table .table-action-cell{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.dash-domin-main table .table-action-cell .action-menu-btn{
+    font-size: 32px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 32px;
+    cursor: pointer;
+}
+.dash-domin-main table .table-action-cell .table-action-menu{
+    position: relative;
+}
+.dash-domin-main table .table-action-cell .table-action-menu-list{
+    position: absolute;
+    right: 0;
+    top: 35px;
+    height: auto;
+    width: 140px;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #00000014;
+    box-shadow: 0px 5px 10px 0px #00000014;
+    z-index: 1;
+}
+.dash-domin-main table .table-action-cell .table-action-menu-list ul li{
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: #111;
+    font-weight: 500;
+}
+.dash-domin-main table .table-action-cell .table-action-menu-list ul li a{
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.dash-domin-main table .table-action-cell .table-action-menu-list ul li:hover{
+    background: #0099ff5d;
+}
+.dash-domin-main table .table-action-cell .renew-btn{
+    height: 32px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    max-width: 80px;
+    color: #1c1110;
+    background: #0099ff !important;
+    color: white;
+    font-size: 14px;
+}
+
+.dash-domin-main .nav.nav-tabs li:hover a,
+.dash-domin-main .nav.nav-tabs li.active a{
+    border-bottom: 2px solid #0099ff !important;
+    outline: none !important;
+}
+
+.dnssec-form{
+    padding-top: 20px;
+}
+.dnssec-form p{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.dnssec-form-row{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.dnssec-form-row h6{
+    text-transform: uppercase;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    margin-bottom: 0;
+    text-align: left;
+    min-width: 80px;
+    color: #1c1110;
+}
+.dnssec-form-row h6 span{
+    font-size: 13px;
+    font-weight: 400;
+}
+.dnssec-form-row .input-fild {
+    max-width: 23%;
+    width: 100%;
+}
+.dnssec-form-row .input-fild label{
+    width: 100%;
+    text-transform: uppercase;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    margin-bottom: 0;
+    text-align: left;
+    color: #1c1110;
+    margin-bottom: 5px;
+}
+.dnssec-form-row input{
+    max-width: 100%;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    color: #1c1110;
+    border: 1px solid #0000001A;
+    background: #00000008;
+    border-radius: 6px;
+    padding: 5px 12px;
+    outline: none;
+}
+.dnssec-form-row .input-droprown{
+    position: relative;
+}
+.dnssec-form-row .input-droprown::after{
+    position: absolute;
+    content: '\003E';
+    right: 13px;
+    top: 8px;
+    font-size: 16px;
+    transform: rotate(90deg);
+}
+.dnssec-form-row select{
+    max-width: 100%;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    color: #1c1110;
+    border: 1px solid #0000001A;
+    background: #00000008;
+    border-radius: 6px;
+    padding: 5px 12px;
+    appearance: none;
+    position: relative;
+    z-index: 1;
+    outline: none;
+}
+
+.dnssec-bottom-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 15px 0px;
+}
+.dnssec-bottom-section .delete-btn{
+    border: none;
+    outline: none;
+    height: auto;
+    width: auto;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f44336;
+}
+.dnssec-bottom-section .right-side-btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+}
+.dnssec-bottom-section .right-side-btns button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+.dnssec-bottom-section  .right-side-btns .btn-danger{
+    background: #f44336;
+    color: white;
+    font-size: 16px;
+}
+.dnssec-bottom-section  .right-side-btns .btn-primary{
+    background: #0099ff;
+    color: white;
+    font-size: 16px;
+}
+
