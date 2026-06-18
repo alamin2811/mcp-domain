@@ -5348,20 +5348,32 @@ div[contenteditable=true].VTMB-textarea:focus {
     height: 32px;
     width: 32px;
     border-radius: 6px;
-    background-color: #0099ff;
+    background-color: #EFF2F4;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
 }
-.dash-domin-main table .table-expandable-btn .table-expandable-arrow{
-    filter: brightness(100);
+.dash-domin-main table.table-expandable > tbody > tr div.table-expandable-arrow{
+    background: url('../images/drop-arrow-bottom.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    margin-top: 0px !important;
+    margin-left: 3px !important;
 }
+.dash-domin-main table.table-expandable > tbody > tr div.table-expandable-arrow.up{
+    background: url('../images/drop-arrow-top.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
 .dash-domin-main table .table-action-cell{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
+    justify-content: flex-end;
+    max-width: 160px;
+    gap: 13px;
+    margin-left: auto;
 }
 .dash-domin-main table .table-action-cell .action-menu-btn{
     font-size: 32px;
@@ -5400,6 +5412,8 @@ div[contenteditable=true].VTMB-textarea:focus {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    outline: none;
+    text-decoration: none;
 }
 .dash-domin-main table .table-action-cell .table-action-menu-list ul li:hover{
     background: #0099ff5d;
