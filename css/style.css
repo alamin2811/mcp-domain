@@ -5416,7 +5416,7 @@ div[contenteditable=true].VTMB-textarea:focus {
     text-decoration: none;
 }
 .dash-domin-main table .table-action-cell .table-action-menu-list ul li:hover{
-    background: #0099ff5d;
+    background: #35b7f35d;
 }
 .dash-domin-main table .table-action-cell .renew-btn{
     height: 32px;
@@ -5426,9 +5426,15 @@ div[contenteditable=true].VTMB-textarea:focus {
     border-radius: 6px;
     max-width: 80px;
     color: #1c1110;
-    background: #0099ff !important;
+    background: #35b7f3 !important;
     color: white;
     font-size: 14px;
+    transition: 0.5s;
+    border: 1px solid #35b7f3;
+}
+.dash-domin-main table .table-action-cell .renew-btn:hover{
+    background: transparent !important;
+    color: #35b6f3;
 }
 
 .dash-domin-main .nav.nav-tabs li:hover a,
@@ -5553,15 +5559,27 @@ div[contenteditable=true].VTMB-textarea:focus {
     border: none;
     outline: none;
     border-radius: 6px;
+    transition: 0.3s;
 }
 .dnssec-bottom-section  .right-side-btns .btn-danger{
     background: #f44336;
     color: white;
     font-size: 16px;
+    border: 1px solid #f44336;
+}
+.dnssec-bottom-section  .right-side-btns .btn-danger:hover{
+    color: #f44336;
+    background: transparent;
 }
 .dnssec-bottom-section  .right-side-btns .btn-primary{
-    background: #0099ff;
+    background: #35b6f3;
     color: white;
     font-size: 16px;
+    border: 1px solid #35b6f3;
+}
+
+.dnssec-bottom-section  .right-side-btns .btn-primary:hover{
+    background: transparent;
+    color: #35b6f3;
 }
 
